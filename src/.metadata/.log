@@ -1,0 +1,89 @@
+!SESSION 2019-01-14 08:31:25.704 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=11.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/brijpatel/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/brijpatel/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-01-14 08:31:42.467
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2019-01-14 08:31:47.027
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.ui.ide 4 0 2019-01-14 08:32:33.225
+!MESSAGE Could not import project located at /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1/src
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1/src
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:565)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:267)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:251)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:604)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:552)
+	... 2 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-01-14 08:33:14.805
+!MESSAGE Exception caught during execution of command '[git, --version]' in '/usr/bin', return code '1', error message 'xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+'
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-01-14 08:33:20.016
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:267)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:251)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:146)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:256)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.access$2(GitImportWizard.java:238)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:208)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1 overlaps the workspace location: /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1/src
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2019-01-14 08:33:20.017
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2019-01-14 08:33:20.017
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2019-01-14 08:33:20.017
+!MESSAGE /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1 overlaps the workspace location: /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1/src
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-01-14 08:33:26.710
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:173)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:57)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:267)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:251)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:146)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:256)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.access$2(GitImportWizard.java:238)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:208)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1 overlaps the workspace location: /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1/src
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2019-01-14 08:33:26.710
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2019-01-14 08:33:26.710
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2019-01-14 08:33:26.710
+!MESSAGE /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1 overlaps the workspace location: /Users/brijpatel/Desktop/Eclipse-workspace/3303-RealTime/Assignment1/src
