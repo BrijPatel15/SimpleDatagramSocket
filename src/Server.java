@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public class Server {
 
 	private Logger serverLogger = Logger.getLogger(Server.class.getName());
-	private final String PATTERN_MATCHER = "([^\\s]+(\\.(?i)(txt)))0[^0-9]*0$";
+	private final String PATTERN_MATCHER = "([^0-9]+(\\.(?i)(txt)))0[^0-9]*0$";
 	public static void main(String[] args) throws CommunicationException {
 		new Server().run();
 	}
