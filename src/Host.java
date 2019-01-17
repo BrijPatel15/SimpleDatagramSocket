@@ -13,7 +13,10 @@ public class Host {
     public static void main(String[] args) {
         new Host().run();
     }
-	
+	/**
+	 * Creates two datagramsockets one to receive packets from the client on port 23 and another to send packets to the Server.
+	 * It prints out the information received and also the information that is sent
+	 * */
     private void run() {
     	try {
     		DatagramSocket recieveSocket = new DatagramSocket(23);

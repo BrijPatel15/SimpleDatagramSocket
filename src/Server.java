@@ -14,7 +14,10 @@ public class Server {
 	public static void main(String[] args) throws CommunicationException {
 		new Server().run();
 	}
-	
+	/**
+	 * Creates on datagramsocket on port 69 to receive packets from the Host and creates a datagramsocket to send packets back to the Host.
+	 * Prints information received from Host, validates the string and then sends back confirmation to the Host
+	 * */
 	private void run() throws CommunicationException {
 		try {
 			DatagramSocket receiveSocket = new DatagramSocket(69);
@@ -39,7 +42,10 @@ public class Server {
 			serverLogger.log(Level.SEVERE, e.getMessage());
 		}
 	}
-	
+	/**
+	 * Creates confirmation packet to send to the host
+	 * @param inputPacket the packet received from the host, used to find what address and port to send too
+	 * */
 	private DatagramPacket createPacket(DatagramPacket inputPacket) throws CommunicationException {
 		String recievedString = new String(inputPacket.getData());
 		boolean validInput = validate(recievedString);
@@ -52,6 +58,10 @@ public class Server {
 		return null;
 	}
 
+	/**
+	 * Validates the string received from Host, if invalid a Communication exception is thrown
+	 * @param inputString the string to validate
+	 * */
 	private boolean validate(String inputString) throws CommunicationException {
 		if(inputString.substring(0, 2).equals("01") || inputString.substring(0, 2).equals("02")){
 			String checkString = inputString.substring(2).trim();
@@ -71,6 +81,10 @@ public class Server {
 		throw new CommunicationException("First two bytes were not 01 or 02");
 	}
 
+	/**
+	 * Checks if any given string contains a digit in it
+	 * @param s String to validate
+	 * */
 	public final boolean containsDigit(String s) {
 	    if (s != null && !s.isEmpty()) {
 	        for (char c : s.toCharArray()) {
@@ -79,7 +93,6 @@ public class Server {
 	            }
 	        }
 	    }
-
 	    return false;
 	}
 	

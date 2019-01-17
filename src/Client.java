@@ -6,8 +6,6 @@ import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
-
 public class Client {
 
 	private final String MODE_STRING = "ocTET";
@@ -18,7 +16,10 @@ public class Client {
     	clientLog.setLevel(Level.ALL);
         new Client().run();
     }
-    
+    /**
+     * Creates datagramsocket and sends the packets to the Host on port 23
+     * Prints the data that it has sent and has received 
+     * */
     public void run() {
     	try {
 			DatagramSocket socket = new DatagramSocket();
@@ -43,7 +44,12 @@ public class Client {
 		}
     	
     }
-
+    
+    /**
+     * Creates the datagramPacket which is sent to the Host. 
+     * @param read determines if the packet is going to be a read or write 
+     * @param fileName the file name used in the string, currently hard coded
+     * */
 	public DatagramPacket createPacket(boolean read, String fileName) throws UnknownHostException {
 		byte[] initialArray;
 		if(read)
